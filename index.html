@@ -1,13 +1,322 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+<html lang="pl-PL">
 <html>
 	<head>
 	<meta charset="UTF-8">
-	<title>Micha� Olech</title>
+	<title>Michał Olech</title>
+	<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-	<img src="portret.jpg" alt"Micha� image" width=566 height=688/>
-	<h1>Micha� Olech</h1>
-	<p>Moja strona</p>
+	<section class="hero">
+		<header>
+		<div class="titlename">
+		<img src="portret.jpg" alt"Michał image"/>
+		<h1>Michał Olech</h1>
+		</div>
+		</header>
+	</section>
+	<section class="seperator"><header><h5>                     </h5></header></div>
+	<section class="projekty">
+	<div class="container">
+		<header>
+		<h2>PROJEKTY</h2>
+		<div class="norskmemo">
+		<h3>NorskMemo</h3>
+				<div class="photos">
+				<img id="norsk1" src="norskmemo/norskmemo1.bmp" alt="NorskMemo1" width="300" height="200" onload="javascript:showImage('norsk1');">
+				<img id="norsk2" src="norskmemo/norskmemo2.bmp" alt="NorskMemo2" width="300" height="200" onload="javascript:showImage('norsk2');">
+				<img id="norsk3" src="norskmemo/norskmemo3.bmp" alt="NorskMemo3" width="300" height="200" onload="javascript:showImage('norsk3');">
+				<img id="norsk4" src="norskmemo/norskmemo4.bmp" alt="NorskMemo4" width="300" height="200" onload="javascript:showImage('norsk4');">
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+  				<span class="close">×</span>
+  				<img class="modal-content" id="img01">
+  				<div id="caption"></div>
+				</div>
+		</div>
+		<p class="opis">Aplikacja służąca do nauki języka norweskiego.</p>
+		<h class="opis_dzialania">Opis działania</h>
+		<p class="opis">Po zalogowaniu się zostaje odblokowana możliwość wczytania bazy danych (w tej wersji dostępny zasób: czasowniki i przysłówki). 
+		Zadaniem użytkownika jest przetłumaczenie danego wyrażenia po norwesku na angielski.</p>
+		<h class="dodatkowe_opcje">Dodatkowe opcje</h>
+		<p class="dodatkowe_opcje"><sub>&#8226</sub> Zapis wyniku do pliku tekstowego: poprawnych i błędnych odpowiedzi.<br>
+		<sub>&#8226</sub>  Eksport i import preferencji użytkownika (wymiary okna oraz rozmiar czcionki).<br>
+		<sub>&#8226</sub>  Zmiana rozmiaru czcionki.<br>
+		<sub>&#8226</sub>  Panel z przyciskiem odtwarzającym syntezator mowy danego wyrażenia norweskiego wraz z możliwością dostosowania natężenia dźwięku i<br>&#160   &#160balansu stereo. 
+		Użytkownik w każdej chwili ma możliwość schowania panelu za pomocą przycisków opcji w pasku menu.<br>
+		<sub>&#8226</sub>  Opcja „Tylko do odczytu” dezaktywująca zapis do pliku tekstowego.
+		</p>
+		<div class="skill">
+		<h class="nabyte_umiejetnosci">Nabyte umiejętności</h>
+		</div>
+		<p class="nabyte_umiejetnosci">
+		<sub>&#8226</sub> Tworzenie aplikacji w bibliotece Swing.<br>
+		<sub>&#8226</sub> Programowanie zorientowane obiektowo.<br>
+		<sub>&#8226</sub> Obsługa zdarzeń interfejsu użytkownika.<br>
+		<sub>&#8226</sub> Wczytywanie i zapis do pliku (klasy Scanner i FileWriter).<br>
+		<sub>&#8226</sub> Zapis i wczytywanie preferencji użytkownika(klasa Preferences).<br>
+		<sub>&#8226</sub> Wczytywanie danych logowania(klasa JPasswordField).<br>
+		<sub>&#8226</sub> Tworzenie okien dialogowych(klasa JDialog).<br>
+		<sub>&#8226</sub> Zapis danych ze stron internetowych(Biblioteka Resty).<br>
+		<sub>&#8226</sub> Odtwarzanie plików .mp3 (Biblioteka JavaFX).<br>
+		<sub>&#8226</sub> Ręczne ustawianie rozkładu komponentów (klasa GroupLayout).
+		</p>
+		<div class="pobierzTitle">
+		<h class="pobierz">Pobierz</h>
+		</div>
+		<div class="downloadBox">
+		<a href="norskmemo/NorskMemo.jar" class="download" target="_blank">Plik jar</a>
+		<a href="norskmemo/Kod źródłowy" class="download" target="_blank">Kod źródłowy</a>
+		</div>
+		</div>
+		<div class="pagescheck">
+		<h3>PagesCheck</h3>
+		<div class="photos">
+				<img id="pages1" src="pagescheck/pagescheck1.bmp" alt="PagesCheck1" width="300" height="200" onload="javascript:showImage('pages1');">
+				<img id="pages2" src="pagescheck/pagescheck2.bmp" alt="PagesCheck2" width="300" height="200" onload="javascript:showImage('pages2');">
+				<img id="pages3" src="pagescheck/pagescheck3.bmp" alt="PagesCheck3" width="300" height="200" onload="javascript:showImage('pages3');">
+				<img id="pages4" src="pagescheck/pagescheck4.bmp" alt="PagesCheck4" width="300" height="200" onload="javascript:showImage('pages4');">
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+  				<span class="close">×</span>
+  				<img class="modal-content" id="img01">
+  				<div id="caption"></div>
+				</div>
+		</div>
+		<p class="opis">Aplikacja służąca do sprawdzenia wymaganej ilości stron do przeczytania dziennie w celu ukończenia 
+			danej książki/książek o tematyce IT w wyznaczonym terminie.</p>
+		<h class="opis_dzialania">Opis działania</h>
+		<p class="opis">Użytkownik w pierwszym polu edycyjnym z podpisem „Wpisz termin”, wpisuje wyznaczony termin na przeczytanie.  
+		Pole edycyjne z podpisem „Wpisz nr strony” służy do wpisania strony aktualnie czytanej książki lub 0 gdy użytkownik nie zaczął. 
+		Następnie należy wpisać ilość stron książki lub książek (ze znakiem ‘+’). Kolejne dwa pola powinno się wypełniać od lewej do prawej, wpisując tytuł książki, a w drugiej kolejności autora. 
+		Wyjście z pola zawierającego dane autora, skutkuję automatycznym załadowaniem ze strony Helion.pl danych odpowiadających  kryteriom 
+		wyszukiwania (zazwyczaj wystarczy wypełnić tylko jedno pole [dowolnie ze znakami lub bez polskich znaków], aby otrzymać bazę danych). 
+		Po wybraniu właściwego tytułu, użytkownik załadowuje wszystkie dane do pól wraz z okładką książki w postaci ikony wyświetlanej po prawej stronie.</p>
+		<h class="dodatkowe_opcje">Dodatkowe opcje</h>
+		<p class="dodatkowe_opcje">
+		<sub>&#8226</sub> Zapis do pliku tekstowego wygenerowanych danych wraz z aktualną datą.<br>
+		<sub>&#8226</sub> Możliwość zmiany koloru tła oraz rozmiaru czcionki.<br>
+		<sub>&#8226</sub> Automatyczny zapis preferencji użytkownika w trakcie zamykania aplikacji (rozmiary okna i czcionki oraz kolor tła ).<br>
+		<sub>&#8226</sub> Pasek ładowania wyświetlany w momencie wczytywania danych ze strony internetowej.
+		</p>
+		<div class="skill">
+		<h class="nabyte_umiejetnosci">Nabyte umiejętności</h>
+		</div>
+		<p class="nabyte_umiejetnosci">
+		<sub>&#8226</sub> Wczytywanie danych ze stron internetowych (klasa BufferedReader).<br>
+		<sub>&#8226</sub> Operacje na datach (klasy DataFormat i Calendar).<br>
+		<sub>&#8226</sub> Zapis i odczyt ustawień użytkownika (klasa Proporties).
+		</p>
+		<div class="pobierzTitle">
+		<h class="pobierz">Pobierz</h>
+		</div>
+		<div class="downloadBox">
+		<a href="pagescheck/PagesCheck.jar" class="download" target="_blank">Plik jar</a>
+		<a href="pagescheck/Kod źródłowy" class="download" target="_blank">Kod źródłowy</a>
+		</div>
+		</div>
+		<div class="javafx">
+		<h3>Analizator BVH</h3>
+		<div class="photos">
+				<img id="javafx1" src="javafx/javafx1.bmp" alt="JavaFX1" width="300" height="200" onload="javascript:showImage('javafx1');">
+				<img id="javafx2" src="javafx/javafx2.bmp" alt="JavaFX2" width="300" height="200" onload="javascript:showImage('javafx2');">
+				<img id="javafx3" src="javafx/javafx3.bmp" alt="JavaFX3" width="300" height="200" onload="javascript:showImage('javafx3');">
+				<img id="javafx4" src="javafx/javafx4.bmp" alt="JavaFX4" width="300" height="200" onload="javascript:showImage('javafx4');">
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+  				<span class="close">×</span>
+  				<img class="modal-content" id="img01">
+  				<div id="caption"></div>
+				</div>
+		</div>
+		<p class="opis">Aplikacja pozwalająca zobrazować i przeanalizować dane ruchu z pliku .bvh zapisanych z kamer typu Kinect.</p>
+		<h class="opis_dzialania">Opis działania</h>
+		<p class="opis">
+		Po wczytaniu pliku użytkownik ma możliwość wyboru kończyny typu wykresu 3D/2D oraz płaszczyzny. 
+		Każda klatka nagrania jest reprezentowana przez jeden punkt na wykresie. 
+		W kolejnej zakładce menu na podstawie wyboru użytkownika jest generowany wykres częstotliwości na podstawie algorytmu Szybkiej Transformaty Fouriera FFT. 
+		Istnieje możliwość porównania przebiegów z dwóch różnych plików na jednym wykresie 2D.</p>
+		<h class="dodatkowe_opcje">Dodatkowe opcje</h>
+		<p class="dodatkowe_opcje">
+		<sub>&#8226</sub> Wyświetlanie etykiet punktów na wykresie 3D oraz ich interpolacja.<br>
+		<sub>&#8226</sub> Wszystkie wykresy posiadają funkcje nasłuchujące, dające możliwość rotacji bądź zmiany zakresu za pomocą przycisków i ruchów myszy.<br>
+		<sub>&#8226</sub> Analiza FFT Szybkiej Transformaty Fouriera dla danej kończyny.
+		</p>
+		<div class="skill">
+		<h class="nabyte_umiejetnosci">Nabyte umiejętności</h>
+		</div>
+		<p class="nabyte_umiejetnosci">
+		<sub>&#8226</sub> Tworzenie GUI w bibliotece JavaFX.<br>
+		<sub>&#8226</sub> Tworzenie obiektów 3D oraz manipulacja obiektami w przestrzeni trójwymiarowej (klasy dziedziczące po klasie Node).<br>
+		<sub>&#8226</sub> Tworzenie styli CSS obiektów interfejsu.<br>
+		<sub>&#8226</sub> Tworzenie wykresów 2D (klasa LineChart itp.).<br>
+		<sub>&#8226</sub> Dopasowywanie wartości danych do skali wykresu 3D.
+		</p>
+		<div class="pobierzTitle">
+		<h class="pobierz">Pobierz</h>
+		</div>
+		<div class="downloadBox">
+		<h8>Pliki udostępniane tylko prywatnie.  <sub><a href="index.html#info">Kontakt</a></sub></h8>
+		</div>
+		</div>
+		<div class="arkanoid">
+		<h3>Arkanoid</h3>
+		<div class="photos">
+				<img id="arkanoid1" src="arkanoid/arkanoid1.bmp" alt="Arkanoid1" width="300" height="200" onload="javascript:showImage('arkanoid1');">
+				<img id="arkanoid2" src="arkanoid/arkanoid2.bmp" alt="Arkanoid2" width="300" height="200" onload="javascript:showImage('arkanoid2');">
+				<img id="arkanoid3" src="arkanoid/arkanoid3.bmp" alt="Arkanoid3" width="300" height="200" onload="javascript:showImage('arkanoid3');">
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+  				<span class="close">×</span>
+  				<img class="modal-content" id="img01">
+  				<div id="caption"></div>
+				</div>
+		</div>
+		<p class="opis">Moja implementacja klasycznej gry na PC Arkanoid w celu nabycia umiejętności sprawnego posługiwania się wątkami.</p>
+		<h class="opis_dzialania">Opis działania</h>
+		<p class="opis">
+		Użytkownik ma za zadanie zbicie wszystkich cegieł za pomocą piłki odbijanej paletką. 
+		W nowym wątku jest tworzony panel na którym w pętli iteracyjnie rysowany jest obiekt klasy Ellipse2D i odświeżany. 
+		Jeżeli obiekt osiągnie pułap wysokości panelu, to automatycznie gra jest przerywana. 
+		W osobnym wątku jest uruchomione rysowanie „paletki”, obiektu klasy Rectangle2D, która wraz z przemieszczaniem się przez przyciśnięcia klawiszy strzałek (lewo i prawo) przez 
+		użytkownika notowane w funkcjach nasłuchujących, odnotowuje aktualne położenie co powoduję iż „piłka” jest w stanie zmienić kierunek ruchu. 
+		W celu dynamicznej rozgrywki, trafienie w końcówki paletki powoduje odbicie piłki w tym samym kierunku.
+		</p>
+		<div class="skill">
+		<h class="nabyte_umiejetnosci">Nabyte umiejętności</h>
+		</div>
+		<p class="nabyte_umiejetnosci">
+		<sub>&#8226</sub> Tworzenie i obsługa wątków (klasa Thread).<br>
+		<sub>&#8226</sub> Tworzenie elementów graficznych w bibliotece Swing.
+		</p>
+		<div class="pobierzTitle">
+		<h class="pobierz">Pobierz</h>
+		</div>
+		<div class="downloadBox">
+		<a href="arkanoid/Arkanoid.jar" class="download" target="_blank">Plik jar</a>
+		<a href="arkanoid/Kod źródłowy" class="download" target="_blank">Kod źródłowy</a>
+		</div>
+		</div>
+		<div class="kalkulator">
+		<h3>Kalkulator</h3>
+		<div class="photos">
+				<img id="kalkulator" src="kalkulator/kalkulator.bmp" alt="Kalkulator" width="300" height="200" onload="javascript:showImage('kalkulator');">
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+  				<span class="close">×</span>
+  				<img class="modal-content" id="img01">
+  				<div id="caption"></div>
+				</div>
+		</div>
+		<p class="opis">Aplikacja napisana w języku C++ utworzona na podstawie biblioteki Qt, posiadająca podstawowe funkcje kalkulatora.</p>
+		<h class="opis_dzialania">Opis działania</h>
+		<p class="opis">
+		Wartości tekstowe zapisane na przyciskach są pobierane i konwertowane na zmienne typu double. Przyciski oznaczone jako symbole działań arytmetycznych, wywołują funkcję obliczającą, a następnie wyświetlają wynik na podstawie danego znaku po wywołaniu po raz drugi. 
+		Przyciski posiadają przypisane funkcje nasłuchujące SIGNAL przy puszczeniu klawisza myszki oraz funkcję wywoływaną w SLOT. 
+		Rzutowanie funkcji sender() na wskaźnik QPushButton, pozwala uzyskać wskaźnik do klawiszy. 
+		Wywołanie metody setCheckable(true) dla danego klawisza pozwala na sprawdzenie ostatniej aktywności użytkownika.
+		</p>
+		<div class="skill">
+		<h class="nabyte_umiejetnosci">Nabyte umiejętności</h>
+		</div>
+		<p class="nabyte_umiejetnosci">
+		<sub>&#8226</sub> Tworzenie podstawowych interfejsów użytkownika w bibliotece Qt.<br>
+		<sub>&#8226</sub> Tworzenie i operowanie wskaźnikami.
+		</p>
+		<div class="pobierzTitle">
+		<h class="pobierz">Pobierz</h>
+		</div>
+		<div class="downloadBox">
+		<a href="kalkulator/Kod źródłowy" class="download" target="_blank">Kod źródłowy</a>
+		</div>
+		</div>
+		<div class="okladka_kondensatora">
+		<h3>Okładka Kondensatora</h3>
+		<div class="photos">
+				<img id="okladka1" src="kondensator/okladka1.bmp" alt="Okladka1" width="300" height="200" onload="javascript:showImage('okladka1');">
+				<img id="okladka2" src="kondensator/okladka2.bmp" alt="Okladka2" width="300" height="200" onload="javascript:showImage('okladka2');">
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+  				<span class="close">×</span>
+  				<img class="modal-content" id="img01">
+  				<div id="caption"></div>
+				</div>
+		</div>
+		<p class="opis">Program umożliwiający rozwiązanie elektrostatycznego zagadnienia Dirichleta w płaskich obszarach 
+		geometrycznych, będących przekrojem poprzecznym układów nieograniczonych w trzecim wymiarze. 
+		Projekt wykonany w ramach uczelnianego kursu „Metody Numeryczne”.</p>
+		<h class="opis_dzialania">Opis działania</h>
+		<p class="opis">
+		W nieskończonej pętli while odświeżane są dane potencjałów elektrycznych w strukturach na podstawie dodawania sąsiednich 
+		komórek będących „przestrzenią” do komórek imitujących okładkę kondensatora i ostrza. 
+		Użytkownik po naciśnięciu dowolnego klawisza zatrzymuję działanie pętli i otwiera menu. 
+		Wartości potencjałów okładki możliwe są do wygenerowania na podstawie przebiegu funkcji sinus po wcześniejszym ustaleniu 
+		dokładności obliczeń (tzn. ilości iteracji pętli obliczającej wartości sinusa na podstawie szeregu). 
+		Dodatkową opcją jest możliwość zmiany koloru tła konsoli wpisując odpowiednią składnię (np. COLOR 12) i 
+		wczytując do funkcji system(). Działanie na zasadzie przypisania adresu ciągu znaków do wskaźnika typu char.
+		</p>
+		<div class="skill">
+		<h class="nabyte_umiejetnosci">Nabyte umiejętności</h>
+		</div>
+		<p class="nabyte_umiejetnosci">
+		<sub>&#8226</sub> Opanowanie składni języka C.<br>
+		<sub>&#8226</sub> Tworzenie i operowanie strukturami.<br>
+		<sub>&#8226</sub> Implementacja algorytmu obliczającego wartości funkcji sinus.
+		</p>
+		<p class="tastrona">i ta strona :)</p>
+		<div class="pobierzTitle">
+		<h class="pobierz">Pobierz</h>
+		</div>
+		<div class="downloadBox">
+		<a href="kondensator/kondensator.exe" class="download" target="_blank">Plik exe</a>
+		<a href="kondensator/Kod źródłowy" class="download" target="_blank">Kod źródłowy</a>
+		</div>
+		</div>
+		</header>
+	</div>
+	</section>
+	<section class="info" id="info">
+	<div class="omnie">
+		<header>
+		<h6>O MNIE</h6>
+		<div class="opisomnie">
+		<p class="opis">Student III roku elektrotechniki na wydziale elektrycznym Politechniki Wrocławskiej. 
+		Choć mój kierunek nie jest stricte związany z informatyką, to w programie studiów zawarte były kursy podstaw programowania w C, matlab czy 
+		programowania mikrokontrolerów z rodziny Atmega. 
+		Dzięki temu miałem okazję poznać do tej pory nieznany mi obszar nauk ścisłych, co zaowocowało wielką ciekawością i usilną chęcią zgłębienia reszty jej aspektów. 
+		Cała moja podróż po "odmętach" programowania, uświadomiła mi, iż to jest właśnie to co chciałbym robić w życiu. 
+		Chęć rozwiązania każdego problemu napotkanego na swojej drodze pochłaniała mnie na tyle głęboko, że spędzone godziny mijały jak minuty. 
+		Programowanie daje mi dużą satysfakcję i wielką radość tworzenia, jak komponowanie utworu dla kompozytora, który jest generalnie ograniczony tylko przez swoją wyobraźnię. 
+		Oprócz programowania interesuję się również tworzeniem muzyki elektronicznej (stąd ta analogia) oraz uprawianiem sportów ekstremalnych (deskorolka, snowboard oraz windsurfing).
+		</p>
+		</div>
+		</header>
+		<div class="kontakt">
+		<header>
+		<h6>KONTAKT</h6>
+		<div class="opiskontakt">
+		<p class="mail">micavanco@gmail.com</p>
+		<p class="tel">513514703</p>
+		</div>
+		</header>
+	</div>
+	</section>
 	</body>
 </head>
 </html>
+			<script>
+			function showImage(image)
+		{
+				var modal = document.getElementById('myModal');
+				var img = document.getElementById(image);
+				var modalImg = document.getElementById("img01");
+				img.onclick = function(){
+    				modal.style.display = "block";
+    				modalImg.src = this.src;
+			}
+			var span = document.getElementsByClassName("close")[0];
+			span.onclick = function() { 
+    			modal.style.display = "none";
+			}
+		}
+			</script>
