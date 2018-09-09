@@ -1,0 +1,429 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: white;
+  background-color: #0E0E0E;
+}
+
+.container {
+  background-color: #0E0E0E;
+  max-width: 90%;
+}
+
+.top-bar {
+  background-color: #1A1919;
+  height: 50px;
+  margin: 0px;
+}
+
+.categories{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.category-item{
+  font-weight: 500;
+  font-size: 23px;
+  margin: 20px 50px 20px 0px;
+  cursor: pointer;
+}
+
+#search-input
+{
+  color: white;
+  font-size: 20px;
+  outline: none;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  border-bottom: 1px solid #b5b5b5;
+  width: 500px;
+}
+
+#search-input:focus
+{
+  border-bottom: 1px solid white;
+}
+
+#search-info
+{
+  color: rgba(112, 105, 102, 0.55);
+  margin: 30px;
+}
+
+.selected-category{
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.list-container {
+  padding: 0px;
+  margin: 0px -10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+
+#description-container
+{
+  display: none;
+  position: fixed;
+  width: 110%;
+  height: 100%;
+  background: black;
+  z-index: 10;
+  top: 0;
+  left: -100px;
+}
+
+#description-background
+{
+  position: fixed;
+  width: 110%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0.30;
+  z-index: 10;
+  top: 0;
+  left: -100px;
+}
+
+#description-box
+{
+  position: fixed;
+  width: 85%;
+  height: 70%;
+  background-color: black;
+  z-index: 10;
+  top: 200px;
+  left: 130px;
+  display: flex;
+}
+
+.description-section
+{
+  margin-top: 20px;
+  margin-left: 500px;
+  height: 94%;
+  position: absolute;
+  overflow-y: scroll;
+}
+
+.description-section h2
+{
+  margin-bottom: 0;
+  width: 150px;
+  font-size: 22px;
+  color: #ffcf39;
+}
+
+.description-section h3
+{
+  width: 50px;
+  float: left;
+  margin-top: 32px;
+  margin-left: 30px;
+  font-size: 22px;
+}
+
+.window-p
+{
+  margin-bottom: 10px;
+  text-align: justify-all;
+}
+
+.poster-inside
+{
+  margin: 20px;
+  position: absolute;
+  width: 450px;
+  height: 94%;
+}
+
+.star-window
+{
+  float: left;
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  background: url("../img/star-icon.png");
+  height: 35px;
+}
+
+.rateNumber-window
+{
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+  color: yellow;
+}
+
+#arrow
+{
+  position: fixed;
+  top: 20px;
+  z-index: 11;
+  width: 250px;
+  height: 150px;
+  background:
+    url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="250px" height="150px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#FFFFFF" d="M512,32c0,64-96,192-320,192V96L0,288l192,192V352C368.438,352,512,208.438,512,32z"/></svg>');
+  background-size: cover;
+  transition: all 0.5s linear;
+}
+
+#arrow:hover
+{
+  background:
+    url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="250px" height="150px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#FFCF39" d="M512,32c0,64-96,192-320,192V96L0,288l192,192V352C368.438,352,512,208.438,512,32z"/></svg>');
+  background-size: cover;
+
+}
+
+.movie-list-item{
+  margin: 0px 10px 50px 10px;
+  box-shadow: 0px 0px 30px 0px rgba(255,255,255,0.30);
+  transition: 0.2s ease-in-out;
+}
+
+.movie-list-item:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.movie-pop-ups
+{
+  width: 300px;
+  height: 450px;
+  position: absolute;
+  background-color: rgba(0,0,0,0.75);
+  padding: 10px;
+  display: none;
+}
+
+.movie-pop-ups > p
+{
+  font-size: 12px;
+  overflow-y: scroll;
+  width: 280px;
+  padding: 10px;
+  height: 200px;
+}
+
+.movie-pop-ups > h1
+{
+  text-align: left;
+  font-size: 200%;
+  height: 100px;
+  overflow-y: scroll;
+}
+
+.star
+{
+  background: url("../img/star-icon.png");
+  width: 180px;
+  height: 35px;
+  position: absolute;
+  margin-top: -45px;
+  margin-left: 90px;
+}
+
+.rateNumber
+{
+  margin-top: 5px;
+  margin-left: 3px;
+  font-size: 20px;
+  color: yellow;
+}
+
+.add-favorites
+{
+  background: url("../img/add.png");
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+
+.add-favorites:hover
+{
+  background: url("../img/add2.png");
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+}
+
+.remove-favorites
+{
+  background: url("../img/rm.png");
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+
+.remove-favorites:hover
+{
+  background: url("../img/rm2.png");
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+}
+
+.fav-container h1
+{
+  font-size: 170%;
+  display: none;
+}
+
+.fav-container:hover
+{
+  color: #ffcf39;
+}
+
+.fade-in
+{
+  animation: fade-in 2s 1;
+}
+
+@keyframes fade-in {
+  from {margin-left: 20px;opacity: 0;}
+  to {margin-left: 0;opacity: 1;}
+}
+
+.hiddenId
+{
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  color: yellow;
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffcf39;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ba8c33;
+}
+
+@media only screen and (min-width: 330px) and (max-width: 1160px)
+{
+  .poster-inside {
+    float: left;
+    height: 640px;
+    width: 90%;
+  }
+
+  .description-section
+  {
+    clear: left;
+    margin-left: 0;
+    margin-top: 700px;
+    position: initial;
+    width: 100%;
+  }
+
+  #description-box
+  {
+    overflow: scroll;
+    left: 3%;
+    width: 90%;
+    top: 150px;
+  }
+
+  .movie-list-item
+  {
+    margin-left: 4%;
+    width: 90%;
+  }
+
+  .categories
+  {
+    display: initial;
+  }
+
+  #player
+  {
+    width: 90%;
+  }
+
+  #description-container
+  {
+    width: 130%;
+  }
+
+  #description-background
+  {
+    width: 130%;
+  }
+
+}
+
+@media only screen and (max-width: 330px)
+{
+  .poster-inside {
+    float: left;
+    height: 640px;
+    width: 90%;
+  }
+
+  .description-section
+  {
+    clear: left;
+    margin-left: 0;
+    margin-top: 700px;
+    position: initial;
+    width: 100%;
+  }
+
+  #description-box
+  {
+    top: 130px;
+    overflow: scroll;
+    left: 5px;
+    width: 90%;
+  }
+
+  .movie-list-item, .poster
+  {
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .categories
+  {
+    display: initial;
+  }
+
+  #player
+  {
+    width: 90%;
+  }
+
+  #description-container
+  {
+    width: 120%;
+  }
+
+  #description-background
+  {
+    width: 120%;
+  }
+
+  #arrow
+  {
+    top: 0;
+  }
+}
