@@ -24,8 +24,8 @@ class MainPage extends Component{
                         </div>
                         <img src="../../img/britainFlag.png" id="menu-flag-b"/>
                         <img src="../../img/polishFlag.png" id="menu-flag-p"/>
-                        <a className="menu-btn" id="menu-btn-projects" href="projects">PROJEKTY</a>
-                        <a className="menu-btn" id="menu-btn-about" href="">O MNIE</a>
+                        <a className="menu-btn" id="menu-btn-projects" href="#/projects#">PROJEKTY</a>
+                        <a className="menu-btn" id="menu-btn-about" href="/">O MNIE</a>
                 </header>
 
                 {/* Whole website content */}
