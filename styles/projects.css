@@ -100,13 +100,13 @@
 
 .project-container
 {
-    margin: 30px 0 57px 134px;
+    margin: 30px 10px 57px 0;
     width: 1032px;
     height: 620px;
     background: #F5F5F5;
     border: 1px solid #707070;
     border-radius: 20px;
-    float: left;
+    float: right;
     padding: 35px 111px 15px 111px;
     transition: all 1s ease-in-out;
 }
@@ -313,19 +313,20 @@
 {
     position: relative;
     z-index: 11;
-    max-height: 720px;
+    height: calc(100% - 220px);
 }
 
 #exit-cross-container
 {
-    left: 100px;
-    top: -367px;
+    right: 100px;
+    top: -30%;
     width: 40px;
     height: 40px;
     cursor: pointer;
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #exit-cross-container:hover>div
@@ -343,7 +344,7 @@
      z-index: 11;
      width: 30px;
      height: 4px;
-     background: #F5F5F5;
+     background: #9B9B9B;
      transform: rotateZ(45deg);
     transition: all 200ms ease-in-out;
 }
@@ -351,7 +352,7 @@
 #exit-cross::after
 {
     content: "";
-    background: #F5F5F5;
+    background: #9B9B9B;
     transform: rotateZ(-90deg);
     position: absolute;
     z-index: 11;
