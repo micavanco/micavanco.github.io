@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+
+/*
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', sans-serif;
+*/
+/*
+    COLORS:
+    White:#F5F5F5
+    Gold: #DA9A2A
+    Black: #1D1D1D
+    Grey: #9B9B9B
+    Grey light: #B0B0B0
+
+ */
+
+/* -------------- OVERALL SECTION ------------------- */
+/* CSS reset */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body {
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+    color: #1D1D1D;
+}
+
+.reset
+{
+    overflow: hidden
+}
+
+a {
+    text-decoration: none;
+}
+
+.content{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: auto;
+}
+
+/* -------------- HEADER SECTION ------------------- */
+
+.header{
+    height: 89px;
+    background: rgba(176,176,176,0.37);
+    position: fixed;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.menu-btn{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    width: 151px;
+    height: 68px;
+    font-size: 16px;
+    border-radius: 4px;
+    float: right;
+    background: #1D1D1D;
+    margin: 11px 20px 10px 0;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    color: #F5F5F5;
+}
+
+.menu-btn:hover
+{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(218, 154, 42, 0.2);
+}
+
+.menu-btn:active
+{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(218, 154, 42, 0.2);
+}
+
+.logo{
+    font-weight: 800;
+    color: #1D1D1D;
+    font-size: 36px;
+}
+
+.logo-container{
+    padding: 22px 0 20px 32px;
+    width: 148px;
+    height: 89px;
+    margin: 0;
+    float: left;
+}
+
+#menu-btn-projects{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 2px;
+}
+
+#menu-btn-about{
+    padding: 23px 25px 20px 43px;
+}
+
+#menu-flag-b {
+     float: right;
+     margin: 31px 25px 30px 25px;
+     cursor: pointer;
+ }
+
+#menu-flag-p {
+    float: right;
+    margin: 31px 0 30px 5px;
+    cursor: pointer;
+}
+
+/* -------------- CONTENT SECTION ------------------- */
+
+.content-page
+{
+    margin-top: 118px;
+}
+
+#front-content{
+    max-width: 1180px;
+    height: 814px;
+    margin: 0 118px;
+    border: 1px solid #cdcdcd;
+}
+
+#front-text{
+    width: 547px;
+    height: 450px;
+    margin: 25% 0 0 15%;
+    float: left;
+}
+
+#front-text>h1{
+    margin-bottom: 25px;
+    font-weight: 400;
+    animation-name: underline;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    backface-visibility: hidden;
+    border-bottom: 1px solid rgba(29, 29, 29, 0)
+}
+
+#front-text>h2{
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #DA9A2A;
+    position: relative;
+    animation: fadeIn 400ms ease-in-out;
+}
+
+#front-text>h2:after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: fadeOut 400ms ease-in-out;
+}
+
+#front-text>h3{
+    font-weight: 300;
+}
+
+
+ #signature{
+     width: 162px;
+     height: 60px;
+     float: right;
+ }
+
+ #face{
+     float: right;
+     margin: 18% 10% 0 0;
+     border-radius: 14px;
+ }
+/* -----  Info Box left ---- */
+ .info-box-left{
+     border: 1px solid #cdcdcd;
+     width: 592px;
+     height: 571px;
+     margin: 75px 0 75px 118px;
+     float: left;
+ }
+
+ .info-box-left-head
+ {
+     font-weight: 300;
+     font-size: 55px;
+     padding: 22px 0 0 0;
+     border-bottom:1px solid #1D1D1D;
+     margin: 0 220px 0 62px;
+ }
+
+.info-box-left-head2
+{
+    margin: 0 60px 0 62px;
+}
+
+.info-box-left-text
+{
+    font-weight: 300;
+    padding: 10px 32px 10px 62px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+#star-wars
+{
+    margin-top: 250px;
+    width: 530px;
+    height: 187px;
+}
+
+#star-wars-head
+{
+    margin-top: -173px;
+    margin-left: 370px;
+    width: 48px;
+    height: 20px;
+    position: absolute;
+}
+
+#star-wars-plane
+{
+    width: 370px;
+    height: 571px;
+    position: absolute;
+    margin-top: -437px;
+}
+
+#bullet
+{
+    height: 2px;
+    width: 5px;
+    background: red;
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 1179px;
+    opacity: 0;
+    transition: margin 0.7s linear;
+}
+/* -----  Info Box right ---- */
+.info-box-right{
+    border: 1px solid #cdcdcd;
+    width: 592px;
+    height: 571px;
+    margin: 75px 118px 75px 0;
+    float: right;
+}
+
+.info-box-right-head
+{
+    font-weight: 300;
+    font-size: 55px;
+    padding: 22px 0 0 0;
+    border-bottom:1px solid #1D1D1D;
+    margin: 0 62px 0 70px;
+    text-align: right;
+}
+
+.lang-row
+{
+    float: left;
+    padding: 16px 0;
+    width: inherit;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.lang-head
+{
+    font-weight: 300;
+    font-size: 16px;
+    float: left;
+    margin-left: 56px;
+    width: 148px;
+}
+
+.lang-info
+{
+    font-weight: 600;
+    font-size: 22px;
+    float: right;
+    margin-right: 62px;
+}
+
+.img-box-right{
+    width: 492px;
+    height: 571px;
+    margin: 75px 118px 75px 0;
+    float: right;
+}
+
+.img-box-right-border
+{
+    border: 1px solid #cdcdcd;
+}
+
+#diploma
+{
+    margin: 30px 0 0 109px;
+    border: 5px solid #cdcdcd;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+}
+
+#diploma:hover
+{
+    box-shadow: 0 10px 25px rgba(218, 154, 42, 0.7);
+}
+
+.img-box-left{
+    width: 417px;
+    height: 571px;
+    margin: 75px 0 75px 118px;
+    float: left;
+}
+
+.btn-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clear: right;
+}
+
+.btn-align
+{
+    margin-top: 30px;
+    margin-right: calc(100% - 320px);
+}
+
+.btn-links > a {
+    color: #F5F5F5;
+}
+
+/* -----  Experience bar ---- */
+
+.lang-bar-content
+{
+
+    float: left;
+    width: 180px;
+    height: 57px;
+}
+
+.lang-bar
+{
+    border: 1px solid black;
+    width: 150px;
+    height: 35px;
+    position: absolute;
+}
+
+.lang-bar-transition
+{
+    transition: width 2s;
+}
+
+.lang-bar-front
+{
+    margin: 20px 0 0 5px;
+}
+
+.lang-bar-back
+{
+    margin: 5px 0 0 10px;
+}
+
+.lang-bar-bottom
+{
+    margin: 39px 0 0 8px;
+    height: 15px;
+    transform: skewX(-19deg);
+}
+
+.lang-bar-top
+{
+    margin: 5px 0 0 8px;
+    height: 15px;
+    transform: skewX(-19deg);
+}
+
+.game
+{
+    background: url("../img/birds-land.png") no-repeat;
+    width: 417px;
+    height: 572px;
+    cursor: crosshair;
+}
+
+#bird1flip, #bird2flip, #bird3flip, #bird4flip, #bird5flip
+{
+    transition: left 3000ms ease-in-out;
+}
+
+#bird1, #bird2, #bird3, #bird4, #bird5
+{
+    transition: left 3000ms ease-in-out;
+}
+
+#score, #score-info
+{
+    white-space: nowrap;
+}
+
+#score-info
+{
+    float: right;
+    font-size: 12px;
+}
+
+#game-time
+{
+    margin-left: 50px;
+    color: #DA9A2A;
+}
+
+/* -----  Animations ---- */
+
+@keyframes underline {
+
+    0%{
+
+    }
+
+    40%{
+        border-bottom: 1px solid rgba(29, 29, 29, 0.1) ;
+    }
+
+    100%{
+        border-bottom: 1px solid rgba(29, 29, 29, 0) ;
+    }
+
+}
+
+@keyframes fadeOut {
+
+    0%{
+        transform: scaleX(0) scaleY(0);
+        background: rgba(218, 154, 42, 0.3);
+        border-radius: 20px;
+    }
+
+    50%{
+
+        background: rgba(218, 154, 42, 0.6);
+        border-radius: 20px;
+    }
+
+    60%{
+
+        background: rgba(218, 154, 42, 0.3);
+        border-radius: 20px;
+    }
+
+    70%{
+
+        background: rgba(218, 154, 42, 0.1);
+        border-radius: 20px;
+    }
+
+    100%{
+        transform: scaleX(1.2) scaleY(1.9);
+        background: rgba(218, 154, 42, 0);
+    }
+
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/* -------------- FOOTER SECTION ------------------- */
+
+.footer{
+    height: 140px;
+    background: #F5F5F5;
+    width: 100%;
+    display: inline-block;
+}
+
+.footer-container
+{
+    clear: left;
+    margin-left: 32px;
+    font-size: 12px;
+}
+
+.footer-container-contact
+{
+    width: 290px;
+    height: 36px;
+    float: left;
+}
+
+.footer-container-contact>p
+{
+    margin-top: 1px;
+    float: left;
+}
+
+#footer-copy
+{
+    float: right;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 32px 20px 0;
+}
+
+/*---- Screen from 1336px to 450px ----*/
+@media only screen and (max-width: 1336px) and (min-width: 450px)
+{
+    .img-box-right{
+        float: left;
+        margin: 0 118px;
+    }
+
+    #bullet
+    {
+        margin-top: 1006px;
+        margin-left: 500px;
+    }
+
+    #face{
+        float: right;
+        margin: 10% 10% 0 0;
+        border-radius: 14px;
+        position: absolute;
+    }
+
+
+    /* -------------- OVERALL SECTION ------------------- */
+
+    /* -------------- HEADER SECTION ------------------- */
+
+
+    /* -------------- CONTENT SECTION ------------------- */
+
+
+    /* -----  Info Box right ---- */
+}
