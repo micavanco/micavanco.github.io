@@ -1,8 +1,19 @@
 import { combineReducers } from 'redux';
-import MoviesReducer from './reducer_movies';
+import { PROJECT_SELECTED } from '../actions';
 
-const rootReducer = combineReducers({
-  movies: MoviesReducer,
-})
 
-export default rootReducer;
+const projectReducer = (selectedProject = null, action)=>{
+    switch(action.type){
+        case PROJECT_SELECTED:
+            if(action.payload){
+                return action.payload;
+            }
+            return null;
+        default: return selectedProject;
+    }
+};
+
+export default combineReducers({
+    project: projectReducer
+});
+

@@ -1,18 +1,25 @@
 import axios from 'axios';
+require("babel-polyfill");
+export const PROJECT_SELECTED = 'PROJECT_SELECTED';
 
-export const FETCH_MOVIES = 'FETCH_MOVIES';
-export const CHANGE_TYPE = 'CHANGE_TYPE';
-const API_KEY = "fd067333da9722a67e0a78739ccecbf1";
+// Action Creator
+export const selectProject = (name) => {
 
-export function fetchData(category) {
-  const url = `https://api.themoviedb.org/3/movie/${category}?api_key=${API_KEY}&language=en-US`;
-  const request = axios.get(url);
+    return async function(dispatch, getState)
+    {
+        let project = null;
+        await axios.get('../../data/projects_pl.json').then(response => {
+            if(response.data.projects)
+                project = response.data.projects.find(o=>o.tag === name);
+        })
+            .catch(error => {
+                console.log(error)
+            });
 
-  return {
-    type: FETCH_MOVIES,
-    payload: request
-  }
-}
-
-
-
+        // Return an action
+        dispatch({
+            type: PROJECT_SELECTED,
+            payload: project
+        })
+    };
+};
