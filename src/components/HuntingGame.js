@@ -197,16 +197,16 @@ class HuntingGame extends Component{
                 <Menu id="menu-game">Kliknij aby rozpocząć grę</Menu>
                 <Score>Liczba punktów: <span id="score">0</span><span id="game-time">3:00</span><span id="score-info">Wciśnij q by zakończyć</span></Score>
                 <Game src="../../img/birds-land.png" id="birds-land" className="game">
-                    <Bird1flip id="bird1flip" onClick={this.onBirdClick.bind(this)}/>
-                    <Bird2flip id="bird2flip" onClick={this.onBirdClick.bind(this)}/>
-                    <Bird3flip id="bird3flip" onClick={this.onBirdClick.bind(this)}/>
-                    <Bird4flip id="bird4flip" onClick={this.onBirdClick.bind(this)}/>
-                    <Bird5flip id="bird5flip" onClick={this.onBirdClick.bind(this)}/>
-                    <Bird1 id="bird1" onClick={this.onBirdClick.bind(this)}/>
-                    <Bird2 id="bird2" onClick={this.onBirdClick.bind(this)}/>
-                    <Bird3 id="bird3" onClick={this.onBirdClick.bind(this)}/>
-                    <Bird4 id="bird4" onClick={this.onBirdClick.bind(this)}/>
-                    <Bird5 id="bird5" onClick={this.onBirdClick.bind(this)}/>
+                    <Bird1flip id="bird1flip" onTouchStart={this.onBirdClick.bind(this)} onClick={this.onBirdClick.bind(this)}/>
+                    <Bird2flip id="bird2flip" onTouchStart={this.onBirdClick.bind(this)} onClick={this.onBirdClick.bind(this)}/>
+                    <Bird3flip id="bird3flip" onTouchStart={this.onBirdClick.bind(this)} onClick={this.onBirdClick.bind(this)}/>
+                    <Bird4flip id="bird4flip" onTouchStart={this.onBirdClick.bind(this)} onClick={this.onBirdClick.bind(this)}/>
+                    <Bird5flip id="bird5flip" onTouchStart={this.onBirdClick.bind(this)} onClick={this.onBirdClick.bind(this)}/>
+                    <Bird1 id="bird1" onTouchStart={this.onBirdClick.bind(this)} onClick={this.onBirdClick.bind(this)}/>
+                    <Bird2 id="bird2" onTouchStart={this.onBirdClick.bind(this)} onClick={this.onBirdClick.bind(this)}/>
+                    <Bird3 id="bird3" onTouchStart={this.onBirdClick.bind(this)} onClick={this.onBirdClick.bind(this)}/>
+                    <Bird4 id="bird4" onTouchStart={this.onBirdClick.bind(this)} onClick={this.onBirdClick.bind(this)}/>
+                    <Bird5 id="bird5" onTouchStart={this.onBirdClick.bind(this)} onClick={this.onBirdClick.bind(this)}/>
                 </Game>
             </div>
         );

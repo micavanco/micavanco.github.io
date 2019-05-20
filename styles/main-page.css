@@ -51,7 +51,7 @@ a {
     height: 89px;
     background: rgba(176,176,176,0.37);
     position: fixed;
-    width: 100%;
+    width: 100vw;
     max-width: 1400px;
     margin: 0 auto;
     z-index: 10;
@@ -123,23 +123,38 @@ a {
 
 /* -------------- CONTENT SECTION ------------------- */
 
-.content-page
+/*.content-page
 {
-    margin-top: 118px;
+    margin-top: 14vh;
+}*/
+
+.row-content{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #front-content{
     max-width: 1180px;
-    height: 814px;
-    margin: 0 118px;
+    height: 86vh;
+    margin: 12vh 118px 0 118px;
     border: 1px solid #cdcdcd;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #front-text{
     width: 547px;
-    height: 450px;
-    margin: 25% 0 0 15%;
-    float: left;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #front-text>h1{
@@ -183,17 +198,16 @@ a {
  }
 
  #face{
-     float: right;
-     margin: 18% 10% 0 0;
      border-radius: 14px;
+     width: 215px;
+     height: 311px;
  }
 /* -----  Info Box left ---- */
  .info-box-left{
      border: 1px solid #cdcdcd;
      width: 592px;
      height: 571px;
-     margin: 75px 0 75px 118px;
-     float: left;
+     margin-right: 20px;
  }
 
  .info-box-left-head
@@ -221,17 +235,17 @@ a {
 #star-wars
 {
     margin-top: 250px;
-    width: 530px;
+    width: 100%;
     height: 187px;
 }
 
 #star-wars-head
 {
-    margin-top: -173px;
-    margin-left: 370px;
     width: 48px;
     height: 20px;
     position: absolute;
+    margin-top: 266px;
+    margin-left: -153px;
 }
 
 #star-wars-plane
@@ -252,14 +266,13 @@ a {
     margin-left: 1179px;
     opacity: 0;
     transition: margin 0.7s linear;
+    display: none;
 }
 /* -----  Info Box right ---- */
 .info-box-right{
     border: 1px solid #cdcdcd;
     width: 592px;
     height: 571px;
-    margin: 75px 118px 75px 0;
-    float: right;
 }
 
 .info-box-right-head
@@ -300,8 +313,6 @@ a {
 .img-box-right{
     width: 492px;
     height: 571px;
-    margin: 75px 118px 75px 0;
-    float: right;
 }
 
 .img-box-right-border
@@ -325,8 +336,7 @@ a {
 .img-box-left{
     width: 417px;
     height: 571px;
-    margin: 75px 0 75px 118px;
-    float: left;
+    margin-right: 94px;
 }
 
 .btn-links{
@@ -526,9 +536,26 @@ a {
     margin: 0 32px 20px 0;
 }
 
-/*---- Screen from 1336px to 450px ----*/
-@media only screen and (max-width: 1336px) and (min-width: 450px)
+/*---- Screen from 675px to 1336px ----*/
+@media only screen and (max-width: 1155px) and (min-width: 675px)
 {
+    .info-box-left{
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+
+    .img-box-left{
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+
+    #front-text{
+        align-items: center;
+        text-align: center;
+    }
+
+
+    /*
     .img-box-right{
         float: left;
         margin: 0 118px;
@@ -545,7 +572,7 @@ a {
         margin: 10% 10% 0 0;
         border-radius: 14px;
         position: absolute;
-    }
+    }*/
 
 
     /* -------------- OVERALL SECTION ------------------- */
@@ -557,4 +584,112 @@ a {
 
 
     /* -----  Info Box right ---- */
+}
+
+/*---- Screen to 675px ----*/
+@media only screen and (max-width: 675px)
+{
+    .info-box-left, .info-box-right{
+        margin-bottom: 40px;
+        margin-right: 0;
+        height: fit-content;
+        width: 90vw;
+    }
+
+    .img-box-left{
+         margin-bottom: 40px;
+         margin-right: 0;
+        width: 90vw;
+     }
+
+    .img-box-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-box-left-head, .info-box-right-head{
+        font-size: 28px;
+        margin: 0 50px;
+    }
+
+    .lang-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #diploma{
+        margin: 10px 0;
+    }
+
+    #menu-btn-about{
+        display: none;
+    }
+
+    #menu-btn-projects{
+        display: none;
+    }
+
+    #menu-flag-b{
+        display: none;
+    }
+
+    #menu-flag-p{
+        display: none;
+    }
+
+    #front-content{
+        margin: 15vh 20px 0 20px;
+        height: fit-content;
+    }
+
+    #front-text{
+        margin: 0 5px;
+        height: fit-content;
+    }
+
+
+    #face{
+        width: 150px;
+        height: 210px;
+        margin: 12px 0;
+    }
+
+    .lang-info{
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .menu-btn{
+        margin: 10px;
+    }
+
+    .bird{
+        cursor: pointer;
+    }
+
+    .game{
+        width: 320px;
+    }
+
+    .info-box-left-text{
+        padding: 5px;
+    }
+
+    #footer-copy{
+        margin: 0;
+        float: none;
+        clear: left;
+    }
+
+
+    #star-wars-head
+    {
+        margin-top: 60px;
+        margin-left: 70px;
+    }
+
 }
